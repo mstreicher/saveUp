@@ -12,7 +12,18 @@ Version 0.1-alpha - June 2016
 
 * To see how to use Angular2 and Ionic2 with TypeScript 
 
+## How to get this running?
+
+> $ sudo npm install -g cordova
+> $ sudo npm install -g ionic 
+> $ npm install
+> $ ionic serve
+
+## Demo
+
+[Online Demo](saveup.meshfields.de)
+
 ## License
 Code licensed under MIT. Docs under Apache 2. PhoneGap is a trademark of Adobe.<br>
 
-[Meshfields - Beyond Software](https://meshfields.de) 2016
+[Meshfields - Beyond Software](http://meshfields.de) 2016
