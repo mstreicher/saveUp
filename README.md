@@ -14,10 +14,12 @@ Version 0.1-alpha - June 2016
 
 ## How to get this running?
 
-> $ sudo npm install -g cordova
-> $ sudo npm install -g ionic 
-> $ npm install
-> $ ionic serve
+```
+$ sudo npm install -g cordova
+$ sudo npm install -g ionic 
+$ npm install
+$ ionic serve
+```
 
 ## Demo
 
