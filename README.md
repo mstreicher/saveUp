@@ -28,4 +28,4 @@ $ ionic serve
 ## License
 Code licensed under MIT. Docs under Apache 2. PhoneGap is a trademark of Adobe.<br>
 
-[Meshfields - Beyond Software](http://meshfields.de) 2016
+2016 [Meshfields - Beyond Software](http://meshfields.de)
