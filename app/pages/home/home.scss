@@ -1,0 +1,30 @@
+$mr-blue: #336a93;
+$mr-light-blue:#e1f2ff;
+$mr-dark-blue:#8ba7bd;
+$mr-teal: #3a949e;
+$mr-dark-teal: #275d63;
+
+
+.detail, .home, .title{
+  font-family: 'Abel', sans-serif;
+}
+
+.title {
+  color: $mr-blue;
+}
+
+.modal-content {
+  border:solid 1px $mr-dark-blue;
+  width:100%;
+  height:175px;
+  margin:15px 0px 15px 0px;
+  padding-top:15px;
+  padding-left:15px;
+  border-radius: 5px;
+  background: $mr-light-blue;
+}
+
+.btn-default {
+  width:110px;
+}
+
