@@ -1,8 +1,10 @@
+<<<<<<< HEAD
 node_modules/
 www/build/
 platforms/
 plugins/
 .DS_Store
+=======
 # Logs
 logs
 *.log
@@ -40,3 +42,4 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+>>>>>>> 2786dfadeaae22773e765364a1aaad9ca812e7b2
