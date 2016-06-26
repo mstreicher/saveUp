@@ -1,13 +1,8 @@
 import { Purchase } from './purchase';
+
 export var PURCHASES: Purchase[] = [
-    {id: 11, name: 'Mr. Nice'},
-    {id: 12, name: 'Narco'},
-    {id: 13, name: 'Bombasto'},
-    {id: 14, name: 'Celeritas'},
-    {id: 15, name: 'Magneta'},
-    {id: 16, name: 'RubberMan'},
-    {id: 17, name: 'Dynama'},
-    {id: 18, name: 'Dr IQ'},
-    {id: 19, name: 'Magma'},
-    {id: 20, name: 'Tornado'}
+    {name: "Delphia 46 (Yacht)", price: 10000, date:'15 Jan 2016'},
+    {name: "Sony 4K X-Reality PRO, Triluminos (TV)", price: 2000, date:'20 Feb 2025'}
 ];
+
+

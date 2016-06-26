@@ -5,6 +5,16 @@
 </ion-navbar>
 
 <ion-content class="detail">
-  <h1 text-center>Edit</h1>
-  <h2 text-center><input [(ngModel)]="title" placeholder="title"></h2>
+  <h1 text-center>Editiere Sparziel</h1>
+  <h2 text-center><input [(ngModel)]="purchase.name"></h2>
+  <h2 text-center><input [(ngModel)]="purchase.price"></h2>
+  <h2 text-center><input [(ngModel)]="purchase.date"></h2>
+
+  <div text-center class="row">
+    <div text-center class="col text-center">
+      <button text-center class="button btn-default" primary (click)="pushPage();">OK</button>
+    </div>
+  </div>
+
 </ion-content>
+

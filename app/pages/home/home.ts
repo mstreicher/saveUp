@@ -2,27 +2,31 @@ import {Component} from "@angular/core";
 import {NavController} from 'ionic-angular';
 import {DetailPage} from '../detail/detail';
 import {PurchaseService} from '../../services/purchase.service';
-import {Purchase} from '../../services/purchase';
+import {OnInit} from '@angular/core';
+
 
 @Component({
   templateUrl: 'build/pages/home/home.html',
-
-  providers: [PurchaseService]
+  providers: [PurchaseService] // teach injector how to make a PurchaseService
 })
 
-export class HomePage {
-
+export class HomePage implements OnInit {
+  sliderLevel: number;
+  purchases:any;
+  
   constructor(private _navController: NavController, private purchaseService: PurchaseService) {
   }
 
-  sliderLevel: number;
-  purchases:any;
-
-  //ToDo: Implement Purchase Model in Template and Compontent and Detail Page
-
-  getPurchases() {
-    this.purchases = this.purchaseService.getPurchases();
+  ngOnInit() {
+    this.getPurchases();
   }
+  
+  getPurchases() {
+    this.purchaseService.getPurchases().then(
+        result => this.purchases = result // function (result) {this.purchases = result}
+    );
+  }
+
 
 
   pushPage(title: string) {

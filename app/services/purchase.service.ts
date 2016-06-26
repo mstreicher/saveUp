@@ -5,6 +5,17 @@ import { PURCHASES } from './mock-purchases';
 @Injectable()
 export class PurchaseService {
     getPurchases() {
-        return PURCHASES;
+        return Promise.resolve(PURCHASES);
+    }
+
+    getOnePurchase(name:string) {
+
+        for (var item of PURCHASES) {
+            if (name === item.name) {
+                return Promise.resolve(item);
+            }
+        }
+
+
     }
 }
