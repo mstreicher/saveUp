@@ -17,6 +17,7 @@ export class DetailPage implements OnInit {
 
   constructor(private _navController: NavController, private _navParams: NavParams, private purchaseService: PurchaseService) {
     this.title = _navParams.get('title');
+    this._navController = _navController;
   }
 
   ngOnInit() {
@@ -32,7 +33,8 @@ export class DetailPage implements OnInit {
   }
 
   pushPage(title: string) {
-    this._navController.push(HomePage);
+    // this._navController.popToRoot();
+    this._navController.pop();
   }
 
 }
