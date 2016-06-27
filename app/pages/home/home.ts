@@ -28,8 +28,7 @@ export class HomePage implements OnInit {
   }
 
 
-
-  pushPage(title: string) {
-    this._navController.push(DetailPage, { title: title });
+  pushPage(name: string) {
+    this._navController.push(DetailPage, { name: name });
   }
 }
